@@ -2,9 +2,11 @@ from dash import *
 from testapp import *
 
 app = Dash(__name__)
+server = app.server
 app.layout = html.Div([
     github_info_header(),
-    html.Img(src="assets/cute_ferret.jpeg")
+    ##html.Img(src="assets/cute_ferret.jpeg")
+    html.Img(src="assets/q.jpg")
 ])
 
 if __name__ == '__main__':
